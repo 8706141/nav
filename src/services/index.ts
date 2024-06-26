@@ -1,7 +1,7 @@
 // Copyright @ 2018-present xiejiahe. All rights reserved. MIT license.
 
 import config from '../../nav.config'
-import http from '../utils/http'
+import http, { httpNav } from '../utils/http'
 import { encode } from 'js-base64'
 import { settings } from 'src/store'
 
@@ -109,6 +109,22 @@ export async function createFile({
     requestActionUrl()
     return res
   })
+}
+
+export async function getUserCollect(data?: Record<string, any>) {
+  return httpNav.post('/api/get', data)
+}
+
+export async function saveUserCollect(data?: Record<string, any>) {
+  return httpNav.post('/api/save', data)
+}
+
+export async function delUserCollect(data?: Record<string, any>) {
+  return httpNav.post('/api/delete', data)
+}
+
+export async function getIconUrl(url: string) {
+  return httpNav.post('/api/icon', { url })
 }
 
 export function getCDN(path: string, branch = 'image') {

@@ -14,6 +14,7 @@ import * as s from '../../data/search.json'
 import { STORAGE_KEY_MAP } from 'src/constants'
 import { isLogin } from './user'
 import { SearchType } from 'src/components/search-engine/index'
+import { getIconUrl } from 'src/services'
 
 export const websiteList: INavProps[] = getWebsiteList()
 
@@ -256,7 +257,11 @@ export function getWebsiteList(): INavProps[] {
 
   // 检测到网站更新，清除缓存本地保存记录失效
   if (storageScriptUrl !== scriptUrl) {
-    const whiteList = [STORAGE_KEY_MAP.token, STORAGE_KEY_MAP.isDark]
+    const whiteList = [
+      STORAGE_KEY_MAP.token,
+      STORAGE_KEY_MAP.isDark,
+      STORAGE_KEY_MAP.authCode,
+    ]
     const len = window.localStorage.length
     for (let i = 0; i < len; i++) {
       const key = window.localStorage.key(i) as string
@@ -353,6 +358,12 @@ export async function getLogoUrl(
       '/favicon.ico',
       '/logo.png',
     ]
+    try {
+      const res = await getIconUrl(url)
+      if (res.data.url) {
+        return res.data.url
+      }
+    } catch (error) {}
     const { origin } = new URL(url)
 
     const promises = c.map((url) => {
