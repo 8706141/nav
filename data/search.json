@@ -17,7 +17,7 @@
   {
     "name": "昵图网",
     "url": "https://soso.nipic.com/?q=%s",
-    "icon": "",
+    "icon": "https://static.ntimg.cn/original/images/favicon.ico",
     "placeholder": "",
     "blocked": false,
     "isInner": false
@@ -25,7 +25,7 @@
   {
     "name": "小红书",
     "url": "https://s.taobao.com/search?q=%s",
-    "icon": "",
+    "icon": "https://www.xiaohongshu.com/favicon.ico",
     "placeholder": "",
     "blocked": false,
     "isInner": false
@@ -33,7 +33,7 @@
   {
     "name": "shutters",
     "url": "https://www.shutterstock.com/zh/search/%s",
-    "icon": "",
+    "icon": "https://www.shutterstock.com/favicon.ico",
     "placeholder": "",
     "blocked": false,
     "isInner": false
@@ -41,7 +41,7 @@
   {
     "name": "壁纸",
     "url": "https://wall.alphacoders.com/search.php?search=%s",
-    "icon": "",
+    "icon": "https://wall.alphacoders.com/favicon.ico",
     "placeholder": "",
     "blocked": false,
     "isInner": false
@@ -49,7 +49,7 @@
   {
     "name": "扩展商店",
     "url": "https://chromewebstore.google.com/search/%s",
-    "icon": "",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
     "placeholder": "",
     "blocked": false,
     "isInner": false
