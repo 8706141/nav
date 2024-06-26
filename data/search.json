@@ -47,9 +47,17 @@
     "isInner": false
   },
   {
-    "name": "扩展商店",
+    "name": "chrome扩展商店",
     "url": "https://chromewebstore.google.com/search/%s",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
+    "icon": "https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "edge扩展商店",
+    "url": "https://microsoftedge.microsoft.com/addons/search/{searchTerms}",
+    "icon": "https://microsoftedge.microsoft.com/favicon.ico",
     "placeholder": "",
     "blocked": false,
     "isInner": false
