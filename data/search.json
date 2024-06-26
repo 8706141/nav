@@ -39,6 +39,14 @@
     "isInner": false
   },
   {
+    "name": "壁纸",
+    "url": "https://wall.alphacoders.com/search.php?search=%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
     "name": "扩展商店",
     "url": "https://chromewebstore.google.com/search/%s",
     "icon": "",
@@ -47,11 +55,17 @@
     "isInner": false
   },
   {
-    "name": "壁纸",
-    "url": "https://wall.alphacoders.com/search.php?search=%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
+    "name": "站内",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
+    "placeholder": "站内搜索",
+    "blocked": true,
+    "isInner": true
+  },
+  {
+    "name": "必应",
+    "url": "https://cn.bing.com/search?q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/bing.svg",
+    "blocked": true,
     "isInner": false
   },
   {
@@ -63,10 +77,18 @@
     "isInner": false
   },
   {
-    "name": "站内",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
-    "placeholder": "站内搜索",
+    "name": "知乎",
+    "url": "https://www.zhihu.com/search?type=content&q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/zhihu.svg",
     "blocked": true,
-    "isInner": true
+    "isInner": false
+  },
+  {
+    "name": "豆瓣",
+    "url": "https://search.douban.com/book/subject_search?search_text=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/douban.svg",
+    "placeholder": "书名、作者、ISBN",
+    "blocked": true,
+    "isInner": false
   }
 ]
