@@ -1,5 +1,37 @@
 [
   {
+    "name": "edge扩展商店",
+    "url": "https://microsoftedge.microsoft.com/addons/search/%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "翻译",
+    "url": "https://translate.google.com/#auto/zh-CN/%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "bilibili",
+    "url": "https://search.bilibili.com/all?keyword=%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "youtube",
+    "url": "https://www.youtube.com/results?search_query=%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
     "name": "shutters",
     "url": "https://www.shutterstock.com/zh/search/%s",
     "icon": "",
@@ -62,32 +94,10 @@
     "isInner": false
   },
   {
-    "name": "必应",
-    "url": "https://cn.bing.com/search?q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/bing.svg",
-    "blocked": false,
-    "isInner": false
-  },
-  {
     "name": "GitHub",
     "url": "https://github.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/github.svg",
     "placeholder": "Search GitHub",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "知乎",
-    "url": "https://www.zhihu.com/search?type=content&q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/zhihu.svg",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "豆瓣",
-    "url": "https://search.douban.com/book/subject_search?search_text=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/douban.svg",
-    "placeholder": "书名、作者、ISBN",
     "blocked": false,
     "isInner": false
   }
