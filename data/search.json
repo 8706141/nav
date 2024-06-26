@@ -1,63 +1,22 @@
 [
   {
-    "name": "edge扩展商店",
-    "url": "https://microsoftedge.microsoft.com/addons/search/%s",
-    "icon": "",
-    "placeholder": "",
+    "name": "Google",
+    "url": "https://www.google.com/search?q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
     "blocked": false,
     "isInner": false
   },
   {
-    "name": "翻译",
-    "url": "https://translate.google.com/#auto/zh-CN/%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "bilibili",
-    "url": "https://search.bilibili.com/all?keyword=%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "youtube",
-    "url": "https://www.youtube.com/results?search_query=%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "shutters",
-    "url": "https://www.shutterstock.com/zh/search/%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "壁纸",
-    "url": "https://wall.alphacoders.com/search.php?search=%s",
-    "icon": "",
-    "placeholder": "",
+    "name": "百度",
+    "url": "https://www.baidu.com/s?wd=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/baidu.svg",
+    "placeholder": "百度一下",
     "blocked": false,
     "isInner": false
   },
   {
     "name": "昵图网",
     "url": "https://soso.nipic.com/?q=%s",
-    "icon": "",
-    "placeholder": "",
-    "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "扩展商店",
-    "url": "https://chromewebstore.google.com/search/%s",
     "icon": "",
     "placeholder": "",
     "blocked": false,
@@ -72,24 +31,26 @@
     "isInner": false
   },
   {
-    "name": "站内",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
-    "placeholder": "站内搜索",
-    "blocked": true,
-    "isInner": true
-  },
-  {
-    "name": "百度",
-    "url": "https://www.baidu.com/s?wd=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/baidu.svg",
-    "placeholder": "百度一下",
+    "name": "shutters",
+    "url": "https://www.shutterstock.com/zh/search/%s",
+    "icon": "",
+    "placeholder": "",
     "blocked": false,
     "isInner": false
   },
   {
-    "name": "Google",
-    "url": "https://www.google.com/search?q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
+    "name": "扩展商店",
+    "url": "https://chromewebstore.google.com/search/%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "壁纸",
+    "url": "https://wall.alphacoders.com/search.php?search=%s",
+    "icon": "",
+    "placeholder": "",
     "blocked": false,
     "isInner": false
   },
@@ -100,5 +61,12 @@
     "placeholder": "Search GitHub",
     "blocked": false,
     "isInner": false
+  },
+  {
+    "name": "站内",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
+    "placeholder": "站内搜索",
+    "blocked": true,
+    "isInner": true
   }
 ]
