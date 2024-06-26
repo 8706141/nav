@@ -62,33 +62,11 @@
     "isInner": true
   },
   {
-    "name": "必应",
-    "url": "https://cn.bing.com/search?q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/bing.svg",
-    "blocked": true,
-    "isInner": false
-  },
-  {
     "name": "GitHub",
     "url": "https://github.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/github.svg",
     "placeholder": "Search GitHub",
     "blocked": false,
-    "isInner": false
-  },
-  {
-    "name": "知乎",
-    "url": "https://www.zhihu.com/search?type=content&q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/zhihu.svg",
-    "blocked": true,
-    "isInner": false
-  },
-  {
-    "name": "豆瓣",
-    "url": "https://search.douban.com/book/subject_search?search_text=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/douban.svg",
-    "placeholder": "书名、作者、ISBN",
-    "blocked": true,
     "isInner": false
   }
 ]
