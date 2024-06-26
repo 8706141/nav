@@ -1,7 +1,39 @@
 [
   {
+    "name": "shutters",
+    "url": "https://www.shutterstock.com/zh/search/%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "壁纸",
+    "url": "https://wall.alphacoders.com/search.php?search=%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "昵图网",
+    "url": "https://soso.nipic.com/?q=%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "扩展商店",
+    "url": "https://chromewebstore.google.com/search/%s",
+    "icon": "",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
     "name": "小红书",
-    "url": "https://www.xiaohongshu.com/search_result/?keyword=%s&source=unknown&type=51",
+    "url": "https://s.taobao.com/search?q=%s",
     "icon": "",
     "placeholder": "",
     "blocked": false,
@@ -15,13 +47,6 @@
     "isInner": true
   },
   {
-    "name": "Google",
-    "url": "https://www.google.com/search?q=",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
-    "blocked": false,
-    "isInner": false
-  },
-  {
     "name": "百度",
     "url": "https://www.baidu.com/s?wd=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/baidu.svg",
@@ -30,10 +55,39 @@
     "isInner": false
   },
   {
+    "name": "Google",
+    "url": "https://www.google.com/search?q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "必应",
+    "url": "https://cn.bing.com/search?q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/bing.svg",
+    "blocked": false,
+    "isInner": false
+  },
+  {
     "name": "GitHub",
     "url": "https://github.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/github.svg",
     "placeholder": "Search GitHub",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "知乎",
+    "url": "https://www.zhihu.com/search?type=content&q=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/zhihu.svg",
+    "blocked": false,
+    "isInner": false
+  },
+  {
+    "name": "豆瓣",
+    "url": "https://search.douban.com/book/subject_search?search_text=",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/douban.svg",
+    "placeholder": "书名、作者、ISBN",
     "blocked": false,
     "isInner": false
   }
