@@ -65,7 +65,7 @@
   {
     "name": "chrome商店",
     "url": "https://chromewebstore.google.com/search/%s",
-    "icon": "https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453526779-chrome商店.svg",
     "placeholder": "",
     "blocked": false,
     "isInner": false
@@ -73,7 +73,7 @@
   {
     "name": "edge商店",
     "url": "https://microsoftedge.microsoft.com/addons/search/{searchTerms}",
-    "icon": "https://microsoftedge.microsoft.com/favicon.ico",
+    "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453776005-微软.svg",
     "placeholder": "",
     "blocked": false,
     "isInner": false
