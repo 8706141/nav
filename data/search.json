@@ -87,7 +87,7 @@
   },
   {
     "name": "edge商店",
-    "url": "https://microsoftedge.microsoft.com/addons/search/%s",
+    "url": "https://microsoftedge.microsoft.com/addons/search/",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453776005-微软.svg",
     "placeholder": "",
     "blocked": false,
