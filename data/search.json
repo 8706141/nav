@@ -55,6 +55,14 @@
     "isInner": false
   },
   {
+    "name": "翻译",
+    "url": "https://translate.google.com/#auto/zh-CN/{%s",
+    "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719545036339-翻译 (1).svg",
+    "placeholder": "",
+    "blocked": false,
+    "isInner": false
+  },
+  {
     "name": "壁纸",
     "url": "https://wall.alphacoders.com/search.php?search=%s",
     "icon": "https://wall.alphacoders.com/favicon.ico",
