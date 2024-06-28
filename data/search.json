@@ -11,7 +11,8 @@
     "url": "https://www.google.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
     "blocked": false,
-    "isInner": false
+    "isInner": false,
+    "placeholder": "google"
   },
   {
     "name": "百度",
@@ -25,7 +26,7 @@
     "name": "昵图网",
     "url": "https://soso.nipic.com/?q=",
     "icon": "https://static.ntimg.cn/original/images/favicon.ico",
-    "placeholder": "",
+    "placeholder": "昵图",
     "blocked": false,
     "isInner": false
   },
@@ -33,7 +34,7 @@
     "name": "youtube",
     "url": "https://www.youtube.com/results?search_query=%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443333916-youtube.svg",
-    "placeholder": "",
+    "placeholder": "youtube",
     "blocked": false,
     "isInner": false
   },
@@ -41,7 +42,7 @@
     "name": "bilibili",
     "url": "https://search.bilibili.com/all?keyword=%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443361763-bilibili.svg",
-    "placeholder": "",
+    "placeholder": "bilibili",
     "blocked": false,
     "isInner": false
   },
@@ -49,7 +50,7 @@
     "name": "小红书",
     "url": "https://s.taobao.com/search?q=%s",
     "icon": "https://www.xiaohongshu.com/favicon.ico",
-    "placeholder": "",
+    "placeholder": "小红书",
     "blocked": false,
     "isInner": false
   },
@@ -57,7 +58,7 @@
     "name": "shutstock",
     "url": "https://www.shutterstock.com/zh/search/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443279018-016-shutterstock.svg",
-    "placeholder": "",
+    "placeholder": "shutterstock",
     "blocked": false,
     "isInner": false
   },
@@ -65,7 +66,7 @@
     "name": "翻译",
     "url": "https://translate.google.com/#auto/zh-CN/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719545036339-翻译 (1).svg",
-    "placeholder": "",
+    "placeholder": "翻译",
     "blocked": false,
     "isInner": false
   },
@@ -73,7 +74,7 @@
     "name": "壁纸",
     "url": "https://wall.alphacoders.com/search.php?search=%s",
     "icon": "https://wall.alphacoders.com/favicon.ico",
-    "placeholder": "",
+    "placeholder": "搜壁纸",
     "blocked": false,
     "isInner": false
   },
@@ -81,7 +82,7 @@
     "name": "chrome商店",
     "url": "https://chromewebstore.google.com/search/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453526779-chrome商店.svg",
-    "placeholder": "",
+    "placeholder": "chrome商店",
     "blocked": false,
     "isInner": false
   },
@@ -89,7 +90,7 @@
     "name": "edge商店",
     "url": "https://microsoftedge.microsoft.com/addons/search/",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453776005-微软.svg",
-    "placeholder": "",
+    "placeholder": "edge商店",
     "blocked": false,
     "isInner": false
   },
@@ -97,7 +98,7 @@
     "name": "GitHub",
     "url": "https://github.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/github.svg",
-    "placeholder": "Search GitHub",
+    "placeholder": "GitHub",
     "blocked": false,
     "isInner": false
   }
