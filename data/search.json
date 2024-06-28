@@ -23,7 +23,7 @@
   },
   {
     "name": "昵图网",
-    "url": "https://soso.nipic.com/?q=%s",
+    "url": "https://soso.nipic.com/?q=",
     "icon": "https://static.ntimg.cn/original/images/favicon.ico",
     "placeholder": "",
     "blocked": false,
@@ -63,7 +63,7 @@
   },
   {
     "name": "翻译",
-    "url": "https://translate.google.com/#auto/zh-CN/{%s",
+    "url": "https://translate.google.com/#auto/zh-CN/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719545036339-翻译 (1).svg",
     "placeholder": "",
     "blocked": false,
@@ -87,7 +87,7 @@
   },
   {
     "name": "edge商店",
-    "url": "https://microsoftedge.microsoft.com/addons/search/{searchTerms}",
+    "url": "https://microsoftedge.microsoft.com/addons/search/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453776005-微软.svg",
     "placeholder": "",
     "blocked": false,
