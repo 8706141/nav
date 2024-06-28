@@ -47,7 +47,7 @@
     "isInner": false
   },
   {
-    "name": "shutters",
+    "name": "shutstock",
     "url": "https://www.shutterstock.com/zh/search/%s",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443279018-016-shutterstock.svg",
     "placeholder": "",
