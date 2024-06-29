@@ -32,7 +32,7 @@
   },
   {
     "name": "youtube",
-    "url": "https://www.youtube.com/results?search_query=%s",
+    "url": "https://www.youtube.com/results?search_query=",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443333916-youtube.svg",
     "placeholder": "youtube",
     "blocked": false,
@@ -40,7 +40,7 @@
   },
   {
     "name": "bilibili",
-    "url": "https://search.bilibili.com/all?keyword=%s",
+    "url": "https://search.bilibili.com/all?keyword=",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443361763-bilibili.svg",
     "placeholder": "bilibili",
     "blocked": false,
@@ -48,7 +48,7 @@
   },
   {
     "name": "小红书",
-    "url": "https://s.taobao.com/search?q=%s",
+    "url": "https://s.taobao.com/search?q=",
     "icon": "https://www.xiaohongshu.com/favicon.ico",
     "placeholder": "小红书",
     "blocked": false,
@@ -56,7 +56,7 @@
   },
   {
     "name": "shutstock",
-    "url": "https://www.shutterstock.com/zh/search/%s",
+    "url": "https://www.shutterstock.com/zh/search/",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719443279018-016-shutterstock.svg",
     "placeholder": "shutterstock",
     "blocked": false,
@@ -72,7 +72,7 @@
   },
   {
     "name": "壁纸",
-    "url": "https://wall.alphacoders.com/search.php?search=%s",
+    "url": "https://wall.alphacoders.com/search.php?search=",
     "icon": "https://wall.alphacoders.com/favicon.ico",
     "placeholder": "搜壁纸",
     "blocked": false,
@@ -80,7 +80,7 @@
   },
   {
     "name": "chrome商店",
-    "url": "https://chromewebstore.google.com/search/%s",
+    "url": "https://chromewebstore.google.com/search/",
     "icon": "https://cdn.jsdelivr.net/gh/8706141/nav@image/nav-1719453526779-chrome商店.svg",
     "placeholder": "chrome商店",
     "blocked": false,
