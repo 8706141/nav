@@ -1,18 +1,18 @@
 [
   {
-    "name": "站内",
-    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
-    "placeholder": "站内搜索",
-    "blocked": false,
-    "isInner": true
-  },
-  {
     "name": "Google",
     "url": "https://www.google.com/search?q=",
     "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/google.svg",
     "blocked": false,
     "isInner": false,
     "placeholder": "google"
+  },
+  {
+    "name": "站内",
+    "icon": "https://cdn.jsdelivr.net/gh/xjh22222228/nav-web@image/logo.png",
+    "placeholder": "站内搜索",
+    "blocked": false,
+    "isInner": true
   },
   {
     "name": "百度",
