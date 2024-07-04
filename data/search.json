@@ -48,7 +48,7 @@
   },
   {
     "name": "小红书",
-    "url": "https://s.taobao.com/search?q=",
+    "url": "https://www.xiaohongshu.com/search_result?keyword=",
     "icon": "https://www.xiaohongshu.com/favicon.ico",
     "placeholder": "小红书",
     "blocked": false,
