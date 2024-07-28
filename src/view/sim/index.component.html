@@ -13,7 +13,10 @@
       <h1 class="title dark-white">
         {{ settings.simTitle || settings.title }}
       </h1>
-      <pre class="description dark-white" [innerHTML]="description"></pre>
+      <pre
+        class="description dark-white"
+        [innerHTML]="description | safeHtml"
+      ></pre>
       <app-search-engine />
     </div>
   </div>
@@ -116,7 +119,10 @@
   </div>
 </div>
 
-<app-footer className="sim-footer"></app-footer>
+<app-footer
+  className="sim-footer"
+  [content]="settings.simFooterHTML"
+></app-footer>
 <app-fixbar (onCollapse)="onCollapseAll()" [collapsed]="collapsed()">
 </app-fixbar>
 
