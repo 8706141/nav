@@ -7,15 +7,31 @@
   <p align="center">一个纯静态、支持SEO、在线编辑的强大导航网站，希望您会喜欢</p>
   <p align="center">内置收录多达 800+ 优质网站， 助您工作、学习和生活</p>
   <p align="center">
-    <!-- <a href="README_en.md">
-      <img src="https://img.shields.io/badge/lang-English-red.svg?longCache=true&style=flat-square">
-    </a> -->
     <img src="https://img.shields.io/github/v/release/xjh22222228/nav" />
     <a href="https://github.com/xjh22222228/nav/stargazers"><img src="https://img.shields.io/github/stars/xjh22222228/nav" alt="Stars"/></a>
     <img alt="Angular" src="https://img.shields.io/static/v1.svg?label=&message=Angular&style=flat-square&color=C82B38">
     <img src="https://img.shields.io/github/license/xjh22222228/nav" />
   </p>
 </p>
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=xjh22222228/nav&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=xjh22222228/nav&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=xjh22222228/nav&type=Date"
+  />
+</picture>
 
 ## 特性
 
@@ -25,7 +41,7 @@
 
 - 🍰 内置 `800+` 优质网站
 - 🍰 支持 [码云 Gitee](https://gitee.com/xiejiahe/nav)
-- 🍰 支持从 Chrome 书签导入
+- 🍰 支持从浏览器书签导入
 - 🍰 支持将数据导出到浏览器书签
 - 🍰 支持用户提交收录
 - 🍰 丰富的资源配置系统
@@ -101,18 +117,14 @@
 
 #### 关于自有部署
 
-前提服务器必须能访问公网。
+前提服务器必须能访问公网。(内网收益太小，暂时不加入需求，有需要的可以众筹) 也可以将仓库设为私有
 
 将代码拉到服务器 `git clone https://github.com/xjh22222228/nav.git` 还需要安装`Node >= 18`
 
-执行 `npm i && npm i pm2 -g && npm run build` 用服务器指向导出的 `dist` 目录, 尝试访问
-
-使用项目自带服务器 [server.js](server.js) ，需要修改文件内的服务器仓库位置
-
-在导航网站后台系统配置补充 `请求地址` 当每次发生保存时会请求下面启动的服务器实现自动部署。
+执行 `npm i && npm run build`
 
 ```bash
-# 启动 公网IP:7777/server
+# 启动 公网IP:7777, 后台系统配置请求地址填写：公网IP:7777/server
 npm run server
 ```
 
@@ -124,26 +136,18 @@ npm run server
 
 将路由地址修改为 `system` 即可进入，如: https://www.nav3.cn/#/light 修改为 https://www.nav3.cn/#/system
 
-## 书签导入
-
-自动检测满足三级分类导航，其他一律设为未分类：
-
-![](https://raw.githubusercontent.com/xjh22222228/public/gh-pages/nav/import.png)
-
-浏览器打开 [chrome://bookmarks/](chrome://bookmarks/) 导出书签得到 html 文件, 接着从导航网站后台导入即可。
-
 ## 升级
 
 将你的仓库克隆下来执行以下命令
 
 ```bash
 git pull
-git remote add upstream https://github.com/xjh22222228/nav.git
+git remote add upstream https://gitee.com/xiejiahe/nav.git
 git fetch upstream main
 git merge upstream/main --allow-unrelated-histories --no-edit
 git push
 
-# 或者执行
+# 如果安装了node只需执行
 npm run update
 ```
 
@@ -171,23 +175,6 @@ yarn start
 yarn build
 ```
 
-## 贡献
-
-Thank you for your [contribution](https://github.com/xjh22222228/nav/issues), men.
-
-<a href="https://github.com/YutHelloWorld">
-  <img src="https://avatars1.githubusercontent.com/u/20860159?s=460&v=4" width="30px" height="30px" />
-</a>
-<a href="https://github.com/JJJTHuang">
-  <img src="https://avatars3.githubusercontent.com/u/22817432?s=460&v=4" width="30px" height="30px" />
-</a>
-<a href="https://github.com/Fechin">
-  <img src="https://avatars1.githubusercontent.com/u/2541482?s=460&v=4" width="30px" height="30px" />
-</a>
-<a href="https://github.com/setdiaoyong">
-  <img src="https://avatars1.githubusercontent.com/u/62551864?s=460&v=4" width="30px" height="30px" />
-</a>
-
 ## 建议
 
 如果有任何功能上的建议可通过 [issue](https://github.com/xjh22222228/nav/issues) 发起, Thank you.
@@ -201,13 +188,8 @@ Thank you for your [contribution](https://github.com/xjh22222228/nav/issues), me
 <img src="https://cdn.jsdelivr.net/gh/xjh22222228/public@gh-pages/img/32.png" width="600">
 
 感谢您的认可：
-| ID | 支持金额 |
-| --------------------------------------- |----------- |
-| [aiyou9](https://github.com/aiyou9) | ￥ 100 |
-| [lastares](https://github.com/lastares) | ￥ 25.00 |
-| [MrJxySteven](https://github.com/MrJxySteven) | ￥ 20.00 |
-| [admol](https://github.com/admol) | ￥ 6.66 |
-| 路人甲 | ￥ 50.00 |
+
+<img src="https://cdn.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/thank.png" width="200" />
 
 ## License
 

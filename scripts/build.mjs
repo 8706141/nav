@@ -2,7 +2,6 @@
 // See https://github.com/xjh22222228/nav
 
 import fs from 'fs'
-import config from '../nav.config.js'
 import path from 'path'
 import LOAD_MAP from './loading.js'
 import dayjs from 'dayjs'
@@ -27,13 +26,6 @@ const nowDate = dayjs.tz().format('YYYY-MM-DD HH:mm:ss')
 const { description, title, keywords, loading, favicon, headerContent } =
   settings
 
-const { gitRepoUrl } = config.default
-
-const s = gitRepoUrl.split('/')
-
-const authorName = s[s.length - 2]
-const repoName = s[s.length - 1]
-
 const htmlTemplate = `
   <!-- https://github.com/xjh22222228/nav -->
   <title>${title}</title>
@@ -57,16 +49,15 @@ async function buildSeo() {
       if (Array.isArray(value.nav)) {
         r(value.nav)
       }
-
-      seoTemplate += `<h3>${value.title || value.name || title}</h3>${
-        value.icon ? `<img data-src="${value.icon}" alt="${value.icon}" />` : ''
-      }<p>${value.desc || description}</p><a href="${
-        value.url || gitRepoUrl
-      }"></a>`
+      if (value.name) {
+        seoTemplate += `<h3>${value.name || title}</h3><p>${
+          value.desc || description
+        }</p><a href="${value.url || ''}"></a>`
+      }
 
       if (value.urls && typeof value.urls === 'object') {
         for (let k in value.urls) {
-          seoTemplate += `<a href="${value.urls[k] || gitRepoUrl}"></a>`
+          seoTemplate += `<a href="${value.urls[k] || ''}"></a>`
         }
       }
     }
@@ -148,28 +139,39 @@ let errorUrlCount = 0
 
   r(db)
 
-  console.log('Getting...')
   const max = settings.spiderQty ?? 20
   const count = Math.ceil(items.length / max)
   let current = 0
   const now = Date.now()
 
+  if (items.length) {
+    console.log(
+      `正在爬取信息... 并发数量：${max}  超时: ${settings.spiderTimeout}秒`
+    )
+  }
+
   while (current < count) {
-    const request = []
+    const requestPromises = []
     for (let i = current * max; i < current * max + max; i++) {
       const item = items[i]
       if (item) {
-        request.push(getWebInfo(item.url, { timeout: 3000 }))
+        requestPromises.push(
+          getWebInfo(item.url, { timeout: settings.spiderTimeout * 1000 })
+        )
       }
     }
 
-    const promises = await Promise.allSettled(request)
+    const promises = await Promise.allSettled(requestPromises)
 
     for (let i = 0; i < promises.length; i++) {
       const idx = current * max + i
       const item = items[idx]
       const res = promises[i].value
-      console.log(`${idx}：${res.status ? '正常' : '疑似异常'} ${item.url}`)
+      console.log(
+        `${idx}：${res.status ? '正常' : `疑似异常: ${res.errorMsg}`} ${
+          item.url
+        }`
+      )
       if (settings.checkUrl) {
         if (!res.status) {
           errorUrlCount += 1

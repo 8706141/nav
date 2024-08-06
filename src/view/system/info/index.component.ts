@@ -1,4 +1,5 @@
 // @ts-nocheck
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 // Copyright @ 2018-present xiejiahe. All rights reserved. MIT license.
 // See https://github.com/xjh22222228/nav
 
@@ -18,7 +19,7 @@ export default class SystemInfoComponent {
   token = getToken()
   config = config
   date = document.getElementById('META-NAV')?.dataset?.['date'] || $t('_unknow')
-  currentVersionSrc = `https://img.shields.io/badge/release-v${VERSION}-red.svg?longCache=true&style=flat-square`
+  currentVersionSrc = `https://img.shields.io/badge/current-v${VERSION}-red.svg?longCache=true&style=flat-square`
 
   constructor() {}
 

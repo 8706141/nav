@@ -1,3 +1,4 @@
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 // Copyright @ 2018-present xiejiahe. All rights reserved. MIT license.
 // See https://github.com/xjh22222228/nav
 
@@ -12,7 +13,7 @@ import { isDark as isDarkFn, randomBgImg, queryString } from 'src/utils'
 import { NzModalService } from 'ng-zorro-antd/modal'
 import { NzMessageService } from 'ng-zorro-antd/message'
 import { isLogin } from 'src/utils/user'
-import { updateFileContent } from 'src/services'
+import { updateFileContent } from 'src/api'
 import { websiteList, settings } from 'src/store'
 import { DB_PATH, STORAGE_KEY_MAP } from 'src/constants'
 import { Router, ActivatedRoute } from '@angular/router'
@@ -85,7 +86,10 @@ export class FixbarComponent {
 
   toggleTheme(theme: any) {
     this.router.navigate([theme.url], {
-      queryParams: queryString(),
+      queryParams: {
+        ...queryString(),
+        _: Date.now(),
+      },
     })
     this.removeBackground()
   }

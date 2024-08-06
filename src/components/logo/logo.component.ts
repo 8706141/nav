@@ -1,5 +1,6 @@
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 import { Component, Input } from '@angular/core'
-import { getCDN } from 'src/services'
+import { getCDN } from 'src/api'
 
 @Component({
   selector: 'app-logo',
@@ -9,11 +10,8 @@ import { getCDN } from 'src/services'
 export class LogoComponent {
   @Input() src: string = ''
   @Input() name: string = ''
-  @Input() colour: string = '#1890ff'
   @Input() size: number = 35
   @Input() check: boolean = true
-
-  hasError = false
 
   constructor() {}
 
@@ -25,9 +23,5 @@ export class LogoComponent {
     } else {
       return this.src
     }
-  }
-
-  onError() {
-    this.hasError = true
   }
 }

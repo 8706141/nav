@@ -1,4 +1,5 @@
 // @ts-nocheck
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 // Copyright @ 2018-present xiejiahe. All rights reserved. MIT license.
 // See https://github.com/xjh22222228/nav
 
@@ -14,19 +15,18 @@ import { websiteList } from 'src/store'
 @Component({
   selector: 'system-bookmark',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
 })
 export default class SystemBookmarkComponent {
   $t = $t
   websiteList: INavProps[] = websiteList
 
-  constructor (
+  constructor(
     private message: NzMessageService,
-    private notification: NzNotificationService,
+    private notification: NzNotificationService
   ) {}
 
-  ngOnInit () {
-  }
+  ngOnInit() {}
 
   onBookChange(e: any) {
     const that = this
@@ -35,19 +35,23 @@ export default class SystemBookmarkComponent {
     const file = files[0]
     const fileReader = new FileReader()
     fileReader.readAsText(file)
-    fileReader.onload = function() {
+    fileReader.onload = function () {
       const html = this.result as string
-      const result = parseBookmark(html)
-      if (!Array.isArray(result)) {
-        that.notification.error(
-          $t('_errorBookTip'),
-          `${result?.message ?? ''}`
-        )
-      } else {
-        that.message.success($t('_importSuccess'))
-        that.websiteList = result
-        setWebsiteList(that.websiteList)
-        setTimeout(() => window.location.reload(), 2000)
+      try {
+        const result = parseBookmark(html)
+        if (!Array.isArray(result)) {
+          that.notification.error(
+            $t('_errorBookTip'),
+            `${result?.message ?? ''}`
+          )
+        } else {
+          that.message.success($t('_importSuccess'))
+          that.websiteList = result
+          setWebsiteList(that.websiteList)
+          setTimeout(() => window.location.reload(), 2000)
+        }
+      } catch (error) {
+        that.notification.error($t('_errorBookTip'), `${error.message}`)
       }
     }
   }

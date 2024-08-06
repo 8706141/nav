@@ -1,4 +1,6 @@
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 const zhCN: Record<string, string> = {
+  _loading: '加载中...',
   _webTitle: '发现导航',
   _uncategorized: '未分类',
   _modifySuccess: '修改成功！',
@@ -76,7 +78,6 @@ const zhCN: Record<string, string> = {
   _addTag: '添加分类',
   _addWeb: '添加网站',
   _clickEdit: '点击编辑',
-  _importChrome: '从Chrome书签导入',
   _allContentMsg1: '1、所有数据设置完毕后点击 “同步到远端”，拖拽表格进行排序',
   _allContentMsg2: '2、网站分类需手动维护,',
   _updateLogo: '更换LOGO',
@@ -122,7 +123,7 @@ const zhCN: Record<string, string> = {
   _tagSettings: '标签设置',
   _websiteMang: '网站管理',
   _addRow: '新增一条',
-  _bookImportTip: `<p>支持大部分主流浏览器基于webkit内核，若导入失败表示暂不支持</p><p>自动检测满足三级分类导航，其他一律设为未分类</p>`,
+  _bookImportTip: `<p>支持大部分主流浏览器，若导入失败表示暂不支持</p><p>自动检测满足三级分类导航，其他一律设为未分类</p>`,
   _engineName: '引擎名称',
   _status: '状态',
   _isDisable: '是否禁用',
@@ -188,8 +189,6 @@ const zhCN: Record<string, string> = {
   _sidebarTitle: '侧栏标题',
   _defTitle4: '默认网站标题, 建议4字以内',
   _inputAuthCode: '请输入授权码',
-  _payTip:
-    '成为VIP可享受全站功能，需支付 ￥99 作为本站稳定运行的贡献，感谢您的支持',
   _waitHandle: '提交成功，等待站长处理',
   _collect: '收录',
   _confirmCollect: '您确定要收录吗？',
@@ -211,6 +210,10 @@ const zhCN: Record<string, string> = {
   _spiderBuildTip:
     '构建完成后对数据无误，请到网站管理点击一次保存，否则数据不会永久存储',
   _associatedLabels: '关联标签',
+  _menuCollapse: '菜单默认收起',
+  _retro: '复古',
+  _accessTimeout: '爬取超时(秒)',
+  _accessTimeoutTip: '爬取网站指定秒数无响应跳过，数字越大成功率越高，但是越慢',
 }
 
 export default zhCN

@@ -1,3 +1,4 @@
+// 开源项目MIT，未经作者同意，不得以抄袭/复制代码/修改源代码版权信息，允许商业途径。
 // Copyright @ 2018-present xiejiahe. All rights reserved. MIT license.
 // See https://github.com/xjh22222228/nav
 
@@ -19,7 +20,7 @@ export class MoveWebComponent {
   websiteList: INavProps[] = websiteList
   twoOptList: INavTwoProp[] = []
   threeOptList: INavThreeProp[] = []
-  checked = false
+  isCopy = false
   oneSelect: number | undefined
   twoSelect: number | undefined
   threeSelect: number | undefined
@@ -91,11 +92,12 @@ export class MoveWebComponent {
     const threeSelect = this.threeSelect as number
 
     try {
+      const moveSites = JSON.parse(JSON.stringify(this.moveSites))
       if (this.level === 2) {
         if (this.oneSelect == null) {
           return this.message.error($t('_sel1'))
         }
-        this.moveSites.forEach((item: any) => {
+        moveSites.forEach((item: any) => {
           const exists = this.websiteList[oneSelect].nav.find(
             (el: any) => el.title === item.title
           )
@@ -105,7 +107,7 @@ export class MoveWebComponent {
           } else {
             this.websiteList[oneSelect].nav.unshift(item)
 
-            if (!this.checked) {
+            if (!this.isCopy) {
               const [a, b, c, d] = indexs
               this.websiteList[a].nav.splice(d, 1)
             }
@@ -117,7 +119,7 @@ export class MoveWebComponent {
         if (this.twoSelect == null) {
           return this.message.error($t('_sel2'))
         }
-        this.moveSites.forEach((item: any) => {
+        moveSites.forEach((item: any) => {
           const exists = this.websiteList[oneSelect].nav[twoSelect].nav.find(
             (el: any) => el.title === item.title
           )
@@ -127,7 +129,7 @@ export class MoveWebComponent {
           } else {
             this.websiteList[oneSelect].nav[twoSelect].nav.unshift(item)
 
-            if (!this.checked) {
+            if (!this.isCopy) {
               const [a, b, c, d] = indexs
               this.websiteList[a].nav[b].nav.splice(d, 1)
             }
@@ -144,25 +146,18 @@ export class MoveWebComponent {
             `move web: indexs数量不正确${indexs.join(',')}`
           )
         }
-        this.moveSites.forEach((item: any) => {
-          const exists = this.websiteList[oneSelect].nav[twoSelect].nav[
+        moveSites.forEach((item: any) => {
+          item.id = item.id + `${Math.random()}`
+          this.websiteList[oneSelect].nav[twoSelect].nav[
             threeSelect
-          ].nav.find((el: any) => el.name === item.name)
+          ].nav.unshift(item)
 
-          if (exists) {
-            this.message.error(`${$t('_repeatAdd')} "${item.name}"`)
-          } else {
-            this.websiteList[oneSelect].nav[twoSelect].nav[
-              threeSelect
-            ].nav.unshift(item)
-
-            if (!this.checked) {
-              const [a, b, c, d] = indexs
-              this.websiteList[a].nav[b].nav[c].nav.splice(d, 1)
-            }
-
-            this.message.success(`"${item.name}" ${$t('_moveSuccess')}`)
+          if (!this.isCopy) {
+            const [a, b, c, d] = indexs
+            this.websiteList[a].nav[b].nav[c].nav.splice(d, 1)
           }
+
+          this.message.success(`"${item.name}" ${$t('_moveSuccess')}`)
         })
       }
 
