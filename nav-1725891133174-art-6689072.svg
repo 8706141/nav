@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.33 3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2b2f35;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #000003;
+      }
+
+      .cls-10 {
+        fill: #1a1f25;
+      }
+
+      .cls-3 {
+        fill: #e8ff00;
+      }
+
+      .cls-4 {
+        fill: #e9fe03;
+      }
+
+      .cls-5 {
+        fill: #3f1f0f;
+      }
+
+      .cls-6 {
+        fill: #eaff0f;
+      }
+
+      .cls-7 {
+        fill: #eaff00;
+      }
+
+      .cls-8 {
+        fill: #373a41;
+      }
+
+      .cls-9 {
+        fill: #3c2e11;
+      }
+    </style>
+  </defs>
+  <rect class="cls-10" y="0" width="5.33" height="3"/>
+  <polygon class="cls-7" points="3.47 .66 3.27 .45 3.28 .39 3.33 .37 3.35 .37 3.56 .58 3.57 .61 3.47 .66"/>
+  <polygon class="cls-6" points="1.42 2.26 1.64 2.49 1.68 2.53 1.76 2.45 1.72 2.4 1.51 2.18 1.49 2.16 1.42 2.25 1.42 2.26"/>
+  <polygon class="cls-4" points="3.07 3 2.91 3 5.08 .8 5.1 .79 5.17 .87 5.16 .88 3.07 3"/>
+  <path class="cls-2" d="M5.33.24v.87l-.02-.02-.35-.36-.12-.16.49-.33h0ZM5.33,1.15v1.47l-.66-.69.07-.21.56-.56h.02Z"/>
+  <path class="cls-1" d="M5.33.24v.82l-.35-.35-.15-.14.49-.33h0ZM5.33,1.18v1.44l-.66-.69.11-.19.55-.56Z"/>
+  <polygon class="cls-2" points="5.33 2.23 5.33 3 3.46 3 3.84 2.62 3.45 2.22 3.4 1.88 4.19 1.28 4.43 1.26 5.33 2.23"/>
+  <polygon class="cls-1" points="5.33 2.31 5.33 3 3.54 3 3.92 2.62 3.5 2.19 3.4 1.88 4.19 1.28 4.37 1.32 5.33 2.31"/>
+  <polygon class="cls-9" points="5.33 1.6 5.33 2.15 4.82 2.66 4.54 2.38 5.33 1.6"/>
+  <polygon class="cls-3" points="5.33 1.63 5.33 2.12 4.82 2.62 4.59 2.37 5.33 1.63"/>
+  <polygon class="cls-2" points="4.28 0 5.33 0 5.33 .5 2.83 3 1.26 3 4.28 0"/>
+  <polygon class="cls-8" points="4.13 0 5.33 0 5.33 .36 2.69 3 1.12 3 4.13 0"/>
+  <polygon class="cls-2" points="0 3 0 1.84 .15 1.68 0 1.53 0 0 .33 0 1.23 .89 1.42 .71 .72 0 3.81 0 .77 3 0 3"/>
+  <polygon class="cls-5" points="1.55 2.23 1.47 2.31 1.42 2.26 1.42 2.25 1.49 2.16 1.51 2.18 1.55 2.23"/>
+  <polygon class="cls-8" points="0 3 0 1.93 .25 1.67 0 1.42 0 0 .28 0 1.24 .96 1.49 .71 .78 0 3.73 0 .68 3 0 3"/>
+  <polygon class="cls-1" points="0 3 0 1.93 .25 1.67 0 1.42 0 0 .28 0 1.24 .96 1.24 2.45 .68 3 0 3"/>
+  <polygon class="cls-2" points="0 1.55 0 .97 .97 0 1.25 .3 0 1.55"/>
+  <polygon class="cls-3" points="0 1.51 0 1.01 .91 .11 1.15 .36 0 1.51"/>
+  <path class="cls-1" d="M1.49.71l-.71-.71h1.44l-.73.71h0ZM2.25,0h1.48l-.74.73-.74-.73Z"/>
+</svg>
